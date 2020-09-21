@@ -1,4 +1,3 @@
-import BMPCalc from './BPMCalculator.js';
 import keyFramesProducer from './animationProducer.js';
 import weight from './weightEvents.js';
 import BPMCalc from './BPMCalculator.js';
@@ -16,14 +15,14 @@ let intervalFunc;
 let animationObj = null;
 
 function startSpinning() {
-    container.style = 'pointer-events: none;';
-    const dataForSpin = BPMCalc(weight.getBoundingClientRect());
-    const interval =  60 / dataForSpin.BPM;
+    container.style = 'pointer-events: none;';          
+    const dataForSpin = BPMCalc(weight.getBoundingClientRect());            //get the BPM;
+    const interval =  60 / dataForSpin.BPM;       
     intervalFunc = setInterval(() => {
         audio.play();
     }, interval * 1000);
-    const keyFrames = keyFramesProducer(dataForSpin.degree, 1);
-    animationObj = arm.animate(keyFrames, { iterations: Infinity, delay: 10, duration: interval * 2000, fill: "forwards" })
+    const keyFrames = keyFramesProducer(dataForSpin.degree, 1);             //produce the animation
+    animationObj = arm.animate(keyFrames, { iterations: Infinity, delay: 10, duration: interval * 2000, fill: "forwards" });
 }
 
 startBttn.addEventListener('click', startSpinning);

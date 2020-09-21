@@ -1,5 +1,7 @@
 
 const produceAnimateDeg = (deg, _iteration) => {
+    //This function creates animation; This animation starts from 0, goes to specific degree,
+    //then back to 0, and continues until the negative value of the specific degree;
     const positive = [];
     const positiveBackward = [];
     const negative = [];

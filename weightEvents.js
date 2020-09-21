@@ -6,7 +6,7 @@ const counter = document.querySelector('.counter');
 let mousedown = false;
 let y = 0;
 
-
+// these are the weight events; move up/down; and showing the calculated BPM;
 
 function moveWeight(e) {
     if (mousedown) {
