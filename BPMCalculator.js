@@ -13,6 +13,7 @@ const BPMCalc = (position) => { //This func calculates the actual BPM based on t
     const max = 480;
     const BPM = Math.round(convertRange(middle, [min, max], [minBPM, maxBPM]));
     const result = { BPM, degree: null };
+    
     if (BPM > 150) {
         result.degree = 20;
     }else if (BPM > 0) {

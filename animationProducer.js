@@ -18,9 +18,9 @@ const produceAnimateDeg = (deg, _iteration) => {
         negativeBackward.push({ transform: `rotate(${-(degree - i)}deg)` });
     }
 
-    const zeroTo60 = positive.concat(positiveBackward);
-    const negativeZeroTo60 = negative.concat(negativeBackward);
-    const finalResult = zeroTo60.concat(negativeZeroTo60).filter((el, i) => el[i] !== el);
+    const zeroToMax = positive.concat(positiveBackward);
+    const negativeZeroToMax = negative.concat(negativeBackward);
+    const finalResult = zeroToMax.concat(negativeZeroToMax);
     return finalResult;
 };
 
