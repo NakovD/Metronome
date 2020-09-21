@@ -1,0 +1,89 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: thistle;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    left: 25%;
+    background-color: tomato;
+    position: absolute;
+    z-index: 0;
+}
+.dot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+    clip-path: circle(50% at 50% 50%);
+    right: 275px;
+    top: 560px;
+    z-index: 2;
+}
+.line {
+    width: 2px;
+    height: 600px;
+    background-color: black;
+    position: absolute;
+    right: 299px;
+}
+.arm {
+    width: 20px;
+    height: 580px;
+    background-color: steelblue;
+    border-radius: 10px;
+    position: absolute;
+    right: 290px;
+    top: 20px;
+    z-index: 1;
+    transform-origin: center bottom;
+}
+.weight {
+    width: 75px;
+    height: 100px;
+    border-radius: 10px;
+    position: absolute;
+    top: 200px;
+    left: -27px;
+    background-color: slategrey;
+    z-index: 2;
+}
+.weight:hover {
+    cursor: pointer;
+}
+
+.controls {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    background: crimson;
+    border-radius: 10px;
+}
+.start, .stop, .BPMContainer {
+    padding: 3px;
+    margin: 1em auto;
+    flex: 0 0 45%;
+    border: none;
+    border-radius: 10px;
+}
+.start {
+    background-color: rgb(94, 255, 105);
+}
+.stop {
+    background-color: rgb(87, 140, 255);
+}
+.BPMContainer {
+    flex: 0 0 40%;
+    padding: 5px;
+    margin: 1em auto;
+    text-align: center;
+    background-color: rgb(239, 247, 223);
+    border-radius: 10em;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="arm">
+            <div class="weight"></div>
+        </div>
+    </div>
+    <div class="controls">
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+        <p class="BPMContainer">BPM: <span class="counter">114</span></p>
+    </div>
+
+    <script type="module" src="./metronomeLogic.js"></script>
+</body>
+
+</html>
