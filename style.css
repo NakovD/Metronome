@@ -75,9 +75,11 @@ body {
 }
 .start {
     background-color: rgb(94, 255, 105);
+    outline: none;
 }
 .stop {
     background-color: rgb(87, 140, 255);
+    outline: none;
 }
 .BPMContainer {
     flex: 0 0 40%;
